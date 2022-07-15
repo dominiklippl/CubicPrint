@@ -17,9 +17,9 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build:backend": "cd apps/backend && yarn build",
+    "dev:backend": "cd apps/backend && yarn serve",
+    "format": "cd apps/backend && yarn format"
   },
   "devDependencies": {
     "prettier": "latest",
