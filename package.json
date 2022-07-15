@@ -1,0 +1,34 @@
+{
+  "name": "cubicprint",
+  "version": "1.0.0",
+  "description": "Simple 3D printer server, mainly for the anycubic i3 mega S",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "author": {
+    "name": "Dominik Lippl",
+    "email": "mail@dominiklippl.de",
+    "url": "https://dominiklippl.de"
+  },
+  "repository": {
+    "url": "https://github.com/dominiklippl/cubicprint.git"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "dependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "semantic-release": "^19.0.3"
+  }
+}
